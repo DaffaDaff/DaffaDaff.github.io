@@ -11,5 +11,15 @@ setTimeout(
     1500
 )
 
-// ----- preload animate -----
+// ----- gallery -----
 
+function changeGallery(){
+    document.getElementById("galleryImg").setAttribute("src", "img/gallery/2.jpg");
+}
+
+setTimeout(
+    function(){
+        changeGallery();
+    },
+    150
+)

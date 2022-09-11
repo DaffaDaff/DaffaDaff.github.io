@@ -70,6 +70,11 @@ hr {
     100% {letter-spacing: 10px;}
 }
 
+@keyframes letter-spacer-out {
+    0% {letter-spacing: 10px;}
+    100% {letter-spacing: 0%;}
+}
+
 /*-----preloader-----*/
 
 #preloader {
@@ -165,6 +170,10 @@ hr {
 #banner b {
     color: rgb(0, 255, 135);
     font-family:'Courier New', Courier, monospace;
+
+    animation-name: letter-spacer-out;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 #banner b:hover {
