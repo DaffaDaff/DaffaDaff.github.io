@@ -1,0 +1,224 @@
+/*-----basics-----*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #06060f;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 255, 135);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(33, 233, 139);
+}
+
+::selection{
+    color: #000;
+    background-color: rgb(0, 255, 135);
+}
+
+body {
+    background-color: #020207;
+}
+
+.color-primary {
+    color: rgb(0, 255, 135);
+}
+
+.bg-lime {
+    background-color: rgb(0, 255, 135);
+}
+
+.btn-primary {
+    background-color: rgb(0, 255, 135);
+    border-color: rgb(0, 255, 135);
+    color: black;
+    user-select: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(33, 233, 139);
+    border-color: rgb(33, 233, 139);
+    color: black;
+}
+
+hr {
+    opacity: 100%;
+    color: rgb(0, 255, 135);
+}
+
+/*-----animation-----*/
+
+@keyframes slide-in-up {
+    0% {transform: translateY(300px);}
+    0% {opacity: 0%;}
+    25% {opacity: 100%;}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes stretchX {
+    0% {width: 0px;}
+    100% {width: 450px;}
+}
+
+@keyframes letter-spacer {
+    0% {letter-spacing: 0%;}
+    100% {letter-spacing: 10px;}
+}
+
+/*-----preloader-----*/
+
+#preloader {
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #020207;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader .spinner-border {
+    width: 100px;
+    height: 100px;
+    border-width: 10px;
+}
+
+/*-----header-----*/
+
+.navbar {
+    background-color: #01010e;
+}
+
+.navbar-brand {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: #eee;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: rgb(0, 255, 135);
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+/*-----banner-----*/
+
+#banner {
+    padding: 250px 0 500px 0;
+}
+
+#banner h1 {
+    font-weight: 500;
+}
+
+#banner h1{
+    animation-name: slide-in-up;
+    animation-duration: 0.7s;
+}
+
+#banner h5{
+    animation-name: slide-in-up;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+#banner h4{
+    animation-name: slide-in-up;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+#banner hr {
+    max-width: 450px;
+
+    animation-name: stretchX;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+}
+
+#banner b {
+    color: rgb(0, 255, 135);
+    font-family:'Courier New', Courier, monospace;
+}
+
+#banner b:hover {
+    animation-name: letter-spacer;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/*-----about-----*/
+
+#about {
+    min-height: 100vh;
+    z-index: 5;
+}
+
+#about h1 {
+    letter-spacing: 5px;
+}
+
+#about p {
+    text-align: justify;
+}
+
+#about b {
+    color: rgb(0, 255, 135);
+    font-family:'Courier New', Courier, monospace;
+}
+
+#about img {
+    border-radius: 5%;
+}
+
+#about h1 b {
+    font-size: 75px;
+}
+
+/*-----work-----*/
+
+#work {
+    min-height: 100vh;
+}
+
+#work b {
+    font-weight: 500;
+    word-spacing: 5px;
+}
+
+/*-----gallery-----*/
+
+#gallery {
+    min-height: 100vh;
+}
+
+#gallery b {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+}
